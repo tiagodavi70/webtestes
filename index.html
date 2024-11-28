@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div>
+            <p>Lista de nomes:</p>
+        </div>
+        <div id="lista">
+
+        </div>
+        <div>
+            <input type="text" id="entrada"/>
+            <button id="adicionar">Adicionar</button>
+        </div>
+    </body>
+    <script>
+        console.log("Olá mundo");
+        // let nome = prompt("Entre com seu nome: ");
+
+        let entrada = document.querySelector("#entrada");
+        console.log(entrada);
+        let lista = document.querySelector("#lista");
+
+        let botao = document.querySelector("#adicionar");
+        botao.addEventListener("mousedown", function(event) {
+            let nome = entrada.value;
+            entrada.value = "";
+
+            let elementoNovo = document.createElement("p");
+            elementoNovo.textContent = nome;
+
+            lista.appendChild(elementoNovo);
+        });
+
+
+
+
+        function apertarBotao(event) {
+            console.log(this);
+        }
+        // botao.addEventListener("mousedown", apertarBotao);
+        // botao.addEventListener("mousedown", (event) => {
+        //    console.log(this);
+        //});
+        //botao.addEventListener("mousedown", event => {
+        //    console.log(this);
+        //});
+
+    </script>
+</html>

@@ -1,0 +1,21 @@
+p {
+    color: salmon
+}
+
+p {
+    color: red
+}
+
+/* id */
+#diferente {
+    font-size: larger;
+}
+
+/* classe */
+.igual {
+    font-size: smaller;
+}
+
+div {
+    border: 1px solid black;
+}
